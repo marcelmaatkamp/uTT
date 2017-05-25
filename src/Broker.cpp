@@ -113,7 +113,7 @@ struct Active : uS::Berkeley<uS::Epoll>::Socket {
             topicTree.subscribe(topic, static_cast<Connection *>(socket), (bool *) static_cast<Connection *>(socket)->getUserData());
 
             // send suback
-            unsigned char subAck[5] = {SUBACK << 4, 3, data[2], data[3], 0};
+            unsigned char subAck[5] = {SUBACK << 4, 3, (unsigned char) data[2], (unsigned char) data[3], 0};
             Active::Message message;
             message.data = (char *) &subAck;
             message.length = 5;
