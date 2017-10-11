@@ -1,3 +1,5 @@
+(NB (marcel): forked to build https://hub.docker.com/r/marcelmaatkamp/utt)
+
 <div align="center"><img src="µTT.png"/></div>
 
 µTT ("microTT") is a lightweight and efficient MQTT broker designed to raise the bar for pub/sub performance. It significantly outperforms emqtt, Redis, HiveMQ, Mosquitto, RabbitMQ, Mosca and many others. Memory usage per connection is also significantly lower as it builds on the networking foundation developed for µWebSockets.
